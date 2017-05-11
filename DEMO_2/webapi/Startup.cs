@@ -1,37 +1,4 @@
-# HelloWorld with ASP.NET Core #
-
-## CMD ##
-
-### Create Web MVC Project ###
-
-    mkdir mvc
-    cd mvc
-
-    dotnet new mvc
-    dotnet restore
-    dotnet run
-
-### Add Web API Project ###
-
-    mkdir webapi
-    cd webapi
-
-    dotnet new webapi
-    dotnet restore
-    dotnet run
-
-Browse [http://localhost:5000/api/values](http://localhost:5000/api/values)
-
-### Add External Package - Swagger for Web API Project  ###
-
-    cd webapi
-    dotnet add package Swashbuckle.AspNetCore
-    dotnet restore
-
-Go to app > Startup.cs and modify:
-
-```csharp
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -80,10 +47,3 @@ namespace webapi
         }
     }
 }
-```
-
-Execute :
-
-    dotnet run
-
-Browse [http://localhost:5000/swagger](http://localhost:5000/swagger)
