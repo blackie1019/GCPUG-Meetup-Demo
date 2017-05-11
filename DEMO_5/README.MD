@@ -1,5 +1,9 @@
 # ASP.NET Core with GAE - Flex Environment #
 
+## Google Cloud SDK Init ##
+
+    ./google-cloud-sdk/bin/gcloud init
+
 ## ASP.NET Core with GAE - Flexible Environment]##
 
     touch Dockerfile
