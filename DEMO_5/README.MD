@@ -1,6 +1,6 @@
 # ASP.NET Core with GAE - Flex Environment #
 
-## GAE - Flex Env - Web  ##
+## ASP.NET Core with GAE - Flexible Environment]##
 
     touch Dockerfile
 
