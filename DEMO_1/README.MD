@@ -5,6 +5,20 @@
 
 ## CMD ##
 
+## ASP.NET Core 1.0.0 CLI ##
+
+Display SDK version:
+
+    dotnet --version
+
+Display runtime version:
+
+    dotnet
+
+List Templates:
+
+    dotnet new --help
+
 ### Hello World! ###
 
     mkdir app
