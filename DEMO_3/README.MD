@@ -49,6 +49,7 @@ List Templates:
 ```js    
 console.log("Inject Hi here");
 ```
+
     gulp clean;gulp min
     dotnet run
 
@@ -57,7 +58,7 @@ console.log("Inject Hi here");
     dotnet publish --configuration Release
     cd bin/Release/netcoreapp1.0/publish/
 
-    gcloud beta app gen-config --custom
+    vi app.yaml
 
 Content:
 
