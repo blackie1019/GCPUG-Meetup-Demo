@@ -1,6 +1,4 @@
-# ASP.NET Core with GAE - Flex Environment and Custom Runtime #
-
-## ASP.NET Core with GAE - Flexible Environment and Custom Runtime ##
+# ASP.NET Core with GAE - Flexible Environment and Custom Runtime #
 
     touch Dockerfile
 

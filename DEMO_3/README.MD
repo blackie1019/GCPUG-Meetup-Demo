@@ -1,4 +1,4 @@
-# ASP.NET Core with GAE - Flexible Environment and aspnetcore Runtime #
+# ASP.NET Core with GAE - Flexible Environment and Google Runtime #
 
 Create a new *GCP Project* and launch *Google Cloud Shell*
 

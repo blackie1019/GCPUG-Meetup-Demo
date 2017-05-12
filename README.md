@@ -13,9 +13,9 @@ Slide - [GCPUG Taiwan Meetup #25 - ASP.NET Core with GCP by Blackie Tsai](https:
 
 - [.NET Core Setup and HelloWorld](/DEMO_1/)
 - [HelloWorld with ASP.NET Core](/DEMO_2/)
-- [ASP.NET Core with GAE - Standard Environment](/DEMO_3/)
+- [ASP.NET Core with GAE - Flexible Environment and Google Runtime](/DEMO_3/)
 - [ASP.NET Core with Container](/DEMO_4/)
-- [ASP.NET Core with GAE - Flexible Environment](/DEMO_5/)
+- [ASP.NET Core with GAE - Flexible Environment and Custom Runtime](/DEMO_5/)
 
 ## Related Posts ##
 
