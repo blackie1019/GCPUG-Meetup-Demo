@@ -52,8 +52,8 @@ console.log("Inject Hi here");
     gulp clean;gulp min
     dotnet run
 
-### Step 3 (enable Google Cloud Container Builder API)###
-    
+### Step 3 (enable Google Cloud Container Builder API) ###
+
     dotnet publish --configuration Release
     cd bin/Release/netcoreapp1.0/publish/
 
