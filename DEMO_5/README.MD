@@ -1,23 +1,30 @@
-# ASP.NET Core with GAE - Flex Environment #
+# ASP.NET Core with GAE - Flex Environment and Custom Runtime #
 
-## Google Cloud SDK Init ##
-
-    ./google-cloud-sdk/bin/gcloud init
-
-## ASP.NET Core with GAE - Flexible Environment ##
+## ASP.NET Core with GAE - Flexible Environment and Custom Runtime ##
 
     touch Dockerfile
 
-Content:
+- [gcloud shell] ASP.NET Core Runtime 1.0.1 Content:
 
-    FROM microsoft/dotnet:1.1.1-runtime
-    COPY . /app
-    WORKDIR /app
+        FROM microsoft/dotnet:1.0.1-runtime
+        COPY . /app
+        WORKDIR /app
 
-    EXPOSE 8080/tcp
-    ENV ASPNETCORE_URLS http://*:8080
+        EXPOSE 8080/tcp
+        ENV ASPNETCORE_URLS http://*:8080
 
-    ENTRYPOINT ["dotnet", "GAENetCoreApp.dll"]
+        ENTRYPOINT ["dotnet", "web.dll"]
+
+- [Local] ASP.NET Core Runtime 1.1.1 Content:
+
+        FROM microsoft/dotnet:1.1.1-runtime
+        COPY . /app
+        WORKDIR /app
+
+        EXPOSE 8080/tcp
+        ENV ASPNETCORE_URLS http://*:8080
+
+        ENTRYPOINT ["dotnet", "app.dll"]
 
 Modify:
 
@@ -35,14 +42,29 @@ Content:
     cpu_utilization:
     target_utilization: 0.5
 
-Setup gcloud SDK account:
+## Google Cloud SDK ##
+
+- Download [CLOUD SDK](https://cloud.google.com/sdk/) 
+- Init CMD:
+
+    ./google-cloud-sdk/bin/gcloud init
+
+- Version Check:
+
+    gcloud -v
+
+- Config Info:
+
+### Setup gcloud SDK account ###
 
     gcloud config configurations list
-    gcloud config configurations activate <YOUR_CONFIG>
+    gcloud config configurations create gcpug-tw-meetup
+    gcloud config configurations list
+    gcloud config configurations activate gcpug-tw-meetup
 
     gcloud config set account blackie1019@gmail.com
     gcloud config set project gcpug-tw-meetup
 
-Deploy:
+### Deploy ###
 
     gcloud app deploy

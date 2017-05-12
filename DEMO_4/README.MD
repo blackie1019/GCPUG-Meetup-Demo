@@ -11,7 +11,7 @@
     dotnet publish -c Release;
 
     cd bin/Release/netcoreapp1.1/publish;
-    touch Docker;
+    touch Dockerfile;
     vi Dockerfile
 
 Content:
@@ -27,5 +27,5 @@ Content:
 
 Create Image and Run:
 
-    docker build -t blackie1019/gcpugemo:gae .
-    docker run -d -p 8080:8080 -t blackie1019/gcpugemo:gae
+    docker build -t blackie1019/gcpugdemo:local .
+    docker run -d -p 8080:8080 -t blackie1019/gcpugdemo:local
