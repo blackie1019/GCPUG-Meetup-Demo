@@ -2,7 +2,7 @@
 
 Introduce ASP.NET Core and sharing how to host .NET application on GCP.
 
-Slide - [GCPUG Taiwan Meetup #25 - ASP.NET Core with GCP by Blackie Tsai](Files\presentaion_gcpug_25.pdf)
+Slide - [GCPUG Taiwan Meetup #25 - ASP.NET Core with GCP by Blackie Tsai](https://drive.google.com/open?id=0ByZH69bRVHlzUzV6YjN4TnNEcW8)
 
 ## Prerequisite ##
 
